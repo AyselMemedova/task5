@@ -2,17 +2,19 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "Lato", sans-serif;
 }
 
 header{
-    font-family: Metropolis, -apple-system,;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #2c3e50;
     height: 100px;
     font-weight: bold;
-    position: sticky;
+    position: fixed;
+    z-index: 22;
+    width: 100%;
 }
 header h1{
     color: white;
@@ -91,7 +93,8 @@ header h1{
 
 
 .portfolio{
-    
+    margin:70px 180px;
+
     background-color:white;
     height: 86vh;
     display: flex;
@@ -145,8 +148,8 @@ header h1{
 }
 
 .portfolio img{
-    width: 340px;
-    height: 240px;
+    width: 30%;
+    height: auto;
 }
 
 .image{
@@ -158,10 +161,6 @@ header h1{
     transition: 0.3s;
 }
 
- .image img :hover{
-    color: #1abc9c;
-
-}
 .about{
     background-color:#1abc9c;
     height: 500px;
@@ -188,13 +187,16 @@ header h1{
     flex-wrap: wrap;
     box-sizing: border-box;
     float: left;
-    width: 30%;
     padding-left: 60px;
-    padding-top: 20px;
-    
 
 }
-
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 30px;
+margin: 40px 300px;
+}
 .about .left p{
 
     color: white;
@@ -204,28 +206,32 @@ header h1{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    float: right;
-    width: 30%;
     
 }
 
-button{
+button, .btn1{
+    color: white;
 
     background-color:#1abc9c;
     border: 1px solid white;
     width: 190px;
+    transition: all .3s ease;
     height: 60px;
     border-radius: 5px;
+
+}
+.btn1:hover{
+    background-color:white;
+    border: 1px solid #1abc9c;
+    color: #1abc9c;
+    transition: all .3s ease;
 }
 
-.about button i{
-    color: white;
-}
+
 
 
 .about button span{
 
-    color: white;
     font-size: medium;
 }
 
@@ -301,48 +307,48 @@ button{
     border-radius: 5px;
 }
 
+
 footer .first{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: #2c3e50;
     height: 250px;
     font-weight: bold;
     color: white;
+    gap: 120px;
 
 }
 
 .first h3{
     color: white;
    font-size: 30px;
+   margin-bottom: 20px;
 }
 .sag { 
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
+    text-align: center;
     
 }
 .sag a{
 
-    color: white;
+    color: #1abc9c;
 }
-
+.linkss{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 footer .orta .linkss i{
 background-color: #2c3e50;
 border-radius: 50%;
 border: 2px solid white;
-margin: 10px;
 padding: 10px;
 font-size: 15px;
 transition: 0.3s;
 
 }
 
-footer .orta .linkss i :hover{
+footer .orta .linkss i:hover{
     background-color: white;
     color: #2c3e50;
 }
@@ -357,7 +363,7 @@ justify-content: space-around;
 
 .sol p a{
     font-size: 15px;
-    color: white;
+    color: #1abc9c;
 }
 
 .last{ 
