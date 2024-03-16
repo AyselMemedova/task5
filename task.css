@@ -220,7 +220,7 @@ button, .btn1{
     background-color:#1abc9c;
     border: 1px solid white;
     width: 190px;
-    transition: all .3s ease;
+    transition: all 0.3s;
     height: 60px;
     border-radius: 5px;
 
@@ -229,7 +229,7 @@ button, .btn1{
     background-color:white;
     border: 1px solid #1abc9c;
     color: #1abc9c;
-    transition: all .3s ease;
+    transition: all 0.3s;
 }
 
 
